@@ -14,5 +14,5 @@ class TestCreateOrder:
     def test_create_order_true(self, color):
         payload = ORDER_DATA
         payload["color"] = color
-        r = requests.post(ORDERS_URL, data=json.dumps(payload))
-        assert r.status_code == 201 and r.json()['track']
+        response = requests.post(ORDERS_URL, data=json.dumps(payload))
+        assert response.status_code == 201 and response.json()['track']

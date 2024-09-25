@@ -1,6 +1,8 @@
 import allure
 from data import *
 from helpers import *
+from courier_creation_randomized import register_new_courier_and_return_login_password
+
 
 
 class TestOrderList:
